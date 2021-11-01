@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./style.css";
 
 const Card = ({
@@ -6,13 +7,11 @@ const Card = ({
   category,
   like,
   dislikes,
-  image,
   handleLike,
   handleDelete,
 }) => {
   return (
     <div className="cardContent">
-      <img src={image} className="cardImg" alt="imageCard" />
       <div className="cardInfo">
         <p className="cardPart">
           <span className="cardTitle">title: </span> {title}
